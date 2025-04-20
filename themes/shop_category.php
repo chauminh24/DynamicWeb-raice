@@ -274,7 +274,11 @@ $max_price = max($prices);
             <li><a href="index.html">Home</a></li>
             <li><a href="event.html">Events</a></li>
             <li><a href="shop_main.html">Shop</a></li>
+<<<<<<< HEAD
             <li><a href="#contact">Contact</a></li>
+=======
+            <li><a href="contact.html">Contact</a></li>
+>>>>>>> 97b4c39 (Initial commit: Add contact form functionality)
             <li>
                 <div class="auth-buttons">
                     <!-- This div's content will be updated by JavaScript -->

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* themes/css/product-slider.css */
 .product-slider {
     position: relative;
@@ -184,3 +185,191 @@
         font-size: 1.5rem;
     }
 }
+=======
+/* themes/css/product-slider.css */
+.product-slider {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 4em;
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.product-card {
+    flex-shrink: 0;
+    width: calc(100% / 2); /* Default for mobile: 2 items */
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+/* Responsive sizes */
+@media (min-width: 768px) {
+    .product-card {
+        width: calc(100% / 3); /* Medium screens: 3 items */
+    }
+}
+
+@media (min-width: 1024px) {
+    .product-card {
+        width: calc(100% / 4); /* Large screens: 4 items */
+    }
+}
+
+.product-card h3 {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.slider-arrow:hover {
+    background: #f7fafc;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.slider-arrow.prev {
+    left: 0;
+}
+
+.slider-arrow.next {
+    right: 0;
+}
+
+.slider-arrow.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Product card container */
+
+
+/* Image container for square images */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    z-index: 5;
+}
+
+.card-body .mt-auto {
+    margin-top: auto;
+}
+
+
+.product-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: auto;
+}
+
+
+
+/* Add to cart button */
+.add-to-cart {
+    color: #fff;
+    background-color: #A09380;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1.5vw;
+}
+
+.category-card {
+    position: relative;
+    height: 14vw;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6));
+}
+
+.category-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.2rem;
+    color: white;
+}
+
+.category-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.category-explore {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.breadcrumb {
+    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: #6c757d;
+}
+
+@media (max-width: 768px) {
+    .category-card {
+        height: 200px;
+    }
+    
+    .category-content {
+        padding: 1.5rem;
+    }
+    
+    .category-title {
+        font-size: 1.5rem;
+    }
+}
+>>>>>>> 97b4c39 (Initial commit: Add contact form functionality)

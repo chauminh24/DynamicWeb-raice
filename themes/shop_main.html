@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -378,4 +379,386 @@
 
 
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../uploads/images/favicon.png" type="image/png">
+    <title>Shop | RaicéNote Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <!-- jQuery from Google CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/product-slider.css" rel="stylesheet">
+    <style>
+        h2 {
+            font-weight: 800;
+        }
+
+        .footer-link a {
+            padding-bottom: 30px;
+        }
+
+        .header {
+            background-color: #E9E9EB !important;
+            color: black !important;
+        }
+
+        .menu-toggle,
+        .search-toggle,
+        .burger {
+            color: black !important;
+        }
+
+        .burger::before,
+        .burger::after,
+        .burger-line {
+            background-color: black;
+        }
+
+        .nav-menu,
+        .nav-menu a {
+            background-color: #E6E6E8;
+            color: black;
+        }
+
+        .nav-menu a:hover {
+            color: #5b5b5b;
+        }
+
+        .nav-menu a::after {
+            background-color: black;
+        }
+
+
+        .navbar-dark {
+            background-color: #E9E9EB;
+        }
+
+        .eyebrow {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            user-select: none;
+            border-top: 1px solid var(--color-text);
+            padding-bottom: calc(var(--space)* 4);
+            padding-top: var(--eyebrow-text-gap);
+        }
+
+        #signature-product {
+            height: 100vh;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <button class="menu-toggle">
+            <span class="burger">
+                <span class="burger-line"></span>
+            </span>
+            <span class="toggle-text">Shop</span>
+        </button>
+
+        <div class="logo"><a href="index.html"><img src="../uploads/images/Asset 4-8.png"></a></div>
+
+        <div class="header-right" style="display: flex;">
+            <div class="search-container">
+                <button class="search-toggle">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Shopping Cart Section -->
+            <div class="cart-container">
+                <a class="cart-table">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2 11h13l3-8H6"></path>
+                    </svg>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="search-input-container">
+        <input type="text" class="search-input" placeholder="Search...">
+        <button class="search-close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+    </div>
+
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="event.html">Events</a></li>
+            <li><a href="shop_main.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <div class="auth-buttons">
+                    <!-- This div's content will be updated by JavaScript -->
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="row align-items-center pb-3" id="signature-product">
+            <div class="col-md-6"><img src="../uploads/images/premiumsake.jpg" alt="Holiday Seasonal Sake"
+                    class="square-image"></div>
+            <div class="col-md-6">
+                <p class="text-uppercase text-primary" style="font-size: smaller; margin-bottom: -.1em;">SIGNATURE!</p>
+                <h2 class="signature-product-name">Holiday Seasonal Sake</h2>
+                <div class="signature-product-price">
+                    <!-- Current Price -->
+                    <div class="price-current">
+                        <span class="display-6">$89.99</span>
+                    </div>
+
+                    <!-- Original Price -->
+                    <!-- <div class="price-original">
+                        <span class="text-muted text-decoration-line-through">$129.99</span>
+                    </div> -->
+
+                    <!-- Save Amount (Optional) -->
+                    <!-- <div class="price-save text-success">
+                        <small>Save 30%</small>
+                    </div> -->
+
+                    <!-- Add to Cart Button -->
+                    <button class="btn btn-primary btn-lg mt-3 add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <!-- Eyebrow Section -->
+        <div class="eyebrow mt-4">
+            <h6 class="eyebrow-text">Recently Added</h6>
+            <div class="line"></div>
+        </div>
+
+
+        <!-- Product Slider Section -->
+        <div class="product-slider recently-added">
+            <div class="slider-container"> <button class="slider-arrow prev" id="prevBtn1"> <i
+                        class="bi bi-chevron-left"></i> </button>
+                <div class="slider-track" id="productTrack1"> <!-- Products will be inserted here --> </div> <button
+                    class="slider-arrow next" id="nextBtn1"> <i class="bi bi-chevron-right"></i> </button>
+            </div>
+        </div>
+    </div>
+    <div class="landscape-media mt-5 mb-5">
+        <img alt="RaicéNote Commercial" data-testid="prism-image" draggable="false" fetchpriority="high" loading="eager"
+            src="/uploads/video/raice5s.gif"
+            style="object-position:center center;width: 100%; height: 30vw; object-fit: cover;" />
+    </div>
+    <div class="container">
+        <div class="eyebrow">
+            <h6 class="eyebrow-text">Perfect Gift Set For Your Loved Ones</h6>
+            <div class="line"></div>
+        </div>
+
+
+        <!-- Product Slider Section -->
+        <div class="product-slider recently-added">
+            <div class="slider-container"> <button class="slider-arrow prev" id="prevBtn2"> <i
+                        class="bi bi-chevron-left"></i> </button>
+                <div class="slider-track" id="productTrack2"> <!-- Products will be inserted here --> </div> <button
+                    class="slider-arrow next" id="nextBtn2"> <i class="bi bi-chevron-right"></i> </button>
+            </div>
+        </div>
+
+        <!-- Categories Section -->
+        <div class="container my-5">
+            <div class="eyebrow mb-4">
+                <h6 class="eyebrow-text">Browse Categories</h6>
+                <div class="line"></div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Korean Makgeolli -->
+                <div class="col-md-6">
+                    <a href="shop_category.php?data-category=korean-makgeolli" class="text-decoration-none">
+                        <div class="category-card">
+                            <img src="../uploads/images/placeholder-makgeolli.jpg" alt="Korean Rice Wine"
+                                class="category-image">
+                            <div class="category-overlay"></div>
+                            <div class="category-content">
+                                <h3 class="category-title">Korean Rice Wine</h3>
+                                <span class="category-explore">Explore Collection →</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Japanese Sake -->
+                <div class="col-md-6">
+                    <a href="shop_category.php?data-category=japanese-sake" class="text-decoration-none">
+                        <div class="category-card">
+                            <img src="../uploads/images/placeholder-sake.jpg" alt="Japanese Rice Wine"
+                                class="category-image">
+                            <div class="category-overlay"></div>
+                            <div class="category-content">
+                                <h3 class="category-title">Japanese Rice Wine</h3>
+                                <span class="category-explore">Explore Collection →</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Chinese Rice Wine -->
+                <div class="col-md-4">
+                    <a href="shop_category.php?data-category=chinese-rice-wine" class="text-decoration-none">
+                        <div class="category-card">
+                            <img src="../uploads/images/placeholder-rice-wine.jpg" alt="Chinese Rice Wine"
+                                class="category-image">
+                            <div class="category-overlay"></div>
+                            <div class="category-content">
+                                <h3 class="category-title">Chinese Rice Wine</h3>
+                                <span class="category-explore">Explore Collection →</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Others -->
+                <div class="col-md-4">
+                    <a href="shop_category.php?data-category=others" class="text-decoration-none">
+                        <div class="category-card">
+                            <img src="../uploads/images/placeholder-others.jpg" alt="Other Beverages"
+                                class="category-image">
+                            <div class="category-overlay"></div>
+                            <div class="category-content">
+                                <h3 class="category-title">Other Rice Wines</h3>
+                                <span class="category-explore">Explore Collection →</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Seasonal Collection -->
+                <div class="col-md-4">
+                    <a href="shop_category.php?data-category=collection" class="text-decoration-none">
+                        <div class="category-card">
+                            <img src="../uploads/images/placeholder-seasonal.jpg" alt="Seasonal Collection"
+                                class="category-image">
+                            <div class="category-overlay"></div>
+                            <div class="category-content">
+                                <h3 class="category-title">Seasonal Collection</h3>
+                                <span class="category-explore">Explore Collection →</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <a href="shop_category.php?data-category=all" class="btn btn-outline-primary btn-lg">
+                        View All Categories
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h4>Your Cart</h4>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Dynamically populated cart items will go here -->
+        </div>
+        <div class="cart-summary">
+            <div class="total">
+                <span>Total:</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <button class="btn btn-primary checkout-btn" id="checkoutButton" onclick="checkAuthStatusForCheckout()">Checkout</button>
+        </div>
+    </div>
+</body>
+<footer class="text-light py-5" style="background-color: black;">
+    <div id="footer-logo" class="d-flex justify-content-center align-items-center my-4"><img
+            src="../uploads/images/Asset 6-8.png" class="mb-5" style="width: auto; height: 8em;"></div>
+    <div class="container">
+        <div class="eyebrow mt-4">
+            <div class="line" style="background-color: white !important;"></div>
+        </div>
+        <div class="row">
+
+            <!-- Column 1: Shop -->
+            <div class="col-6 col-lg-3">
+                <h5><a href="#" class="footer-link text-uppercase">SHOP</a></h5>
+                <h5><a href="#" class="footer-link text-uppercase">Events</a></h5>
+                <h5><a href="#" class="footer-link text-uppercase">Contact Us</a></h5>
+                <h5><a href="#" class="footer-link text-uppercase">ABOUT US</a></h5>
+
+            </div>
+
+
+            <!-- Column 2: Address -->
+            <div class="col-6 col-lg-4 ">
+                <h5 class="text-uppercase mb-4">Our Location</h5>
+                <p class="text-light" style="font-size: smaller;">123 Main Street, Suite 100, City, Country</p>
+                <a href="https://www.google.com/maps" target="_blank" class="btn btn-light btn-sm mt-3">GET DIRECTIONS
+                    &rarr;</a>
+                <h5 class="mt-3"><a href="#" class="text-light">Social Media</h5>
+                <div class="social-media-icons mt-3">
+                    <a href="#" class="text-light me-3"><i class="bi bi-facebook" style="font-size: 20px;"></i></a>
+                    <a href="#" class="text-light me-3"><i class="bi bi-instagram" style="font-size: 20px;"></i></a>
+                    <a href="#" class="text-light me-3"><i class="bi bi-twitter" style="font-size: 20px;"></i></a>
+                </div>
+
+            </div>
+
+            <!-- Column 3: Newsletter Subscription -->
+            <div class="col-lg-5 mt-5">
+                <h5 class="text-uppercase">want more of raicé?</h5>
+                <p class="mb-4" style="font-size: smaller;">Get our email. Letters from our brewers, new products,
+                    coming-up events, workshop, and more. Not too often - just enough</p>
+                <form action="#" method="post">
+                    <div class="input-group" style="height: 3em;">
+                        <input type="email" class="form-control rounded-0 custom-input" placeholder="EMAIL"
+                            aria-label="Email" required>
+                        <button class="btn custom-button" type="submit">SIGN UP</button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<script src="js/styling.js"></script>
+<script src="js/product-slider.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/cart.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+>>>>>>> 97b4c39 (Initial commit: Add contact form functionality)
 </html>
